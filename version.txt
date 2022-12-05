@@ -1,1 +1,0 @@
-ninja-1.10.2,https://github.com/ninja-build/ninja/releases
