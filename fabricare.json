@@ -1,7 +1,7 @@
 {
 	"project": {
 		"name" : "ninja-build",
-		"type" : "xyo-vendor",
+		"type" : "xyo-cpp",
 		"SPDX-License-Identifier": "LicenseRef-bzip2-1.0.8",
 		"sourceLink" : "https://github.com/ninja-build/ninja/releases",
 		"version" : "1.10.2"
