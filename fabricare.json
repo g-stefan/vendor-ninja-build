@@ -2,7 +2,7 @@
 	"project": {
 		"name" : "ninja-build",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "LicenseRef-bzip2-1.0.8",
+		"SPDX-License-Identifier": "Apache-2.0",
 		"sourceLink" : "https://github.com/ninja-build/ninja/releases",
 		"version" : "1.10.2"
 	}
