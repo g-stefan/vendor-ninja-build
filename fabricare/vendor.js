@@ -26,14 +26,14 @@ Shell.removeFile("archive/" + Project.vendor + ".7z");
 
 // Source
 runInPath("archive", function() {
-	webLink = "https://github.com/ninja-build/ninja/archive/v1.10.2.zip";
+	webLink = "https://github.com/ninja-build/ninja/archive/v"+Project.version+".zip";
 	if (!Shell.fileExists(Project.vendor + ".zip")) {
 		exitIf(Shell.system("curl --insecure --location " + webLink + " --output " + Project.vendor + ".zip"));
 	};
 	exitIf(Shell.system("7z x " + Project.vendor + ".zip -aoa -o."));
 	Shell.removeFile(Project.vendor + ".zip");
 	Shell.removeFile(Project.vendor + ".7z");
-	Shell.rename("ninja-1.10.2","ninja-build-1.10.2");
+	Shell.rename("ninja-"+Project.version,"ninja-build-"+Project.version);
 	exitIf(Shell.system("7z a -mx9 -mmt4 -r- -sse -w. -y -t7z " + Project.vendor + ".7z " + Project.vendor));
 	Shell.removeDirRecursively(Project.vendor);
 });
