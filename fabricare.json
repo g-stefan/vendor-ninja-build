@@ -1,13 +1,17 @@
 {
-	"project": {
-		"name" : "ninja-build",
+	"solution": {
+		"name" : "vendor-ninja-build",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "Apache-2.0",
-		"sourceLink" : "https://github.com/ninja-build/ninja/releases",
-		"version" : "1.11.1",
-		"hasRelease" : true,
-		"noVersion" : true,
-		"githubRelease" : true,
-		"githubRepository" : "vendor-ninja-build"
+		"projects": [
+			{
+				"name" : "ninja-build",
+				"SPDX-License-Identifier": "Apache-2.0",
+				"sourceLink" : "https://github.com/ninja-build/ninja/releases",
+				"version" : "1.11.1",
+				"noVersion" : true
+			}
+		],
+		"releaseName" : "ninja-build",
+		"hasGithub" : true
 	}
 }
