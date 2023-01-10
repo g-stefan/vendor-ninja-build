@@ -3,7 +3,7 @@ Build scripts for compiling [Ninja Build](https://ninja-build.org/) with MSVC co
 
 ## License
 
-Copyright (c) 2022 Grigore Stefan
+Copyright (c) 2021-2023 Grigore Stefan
 Licensed under the [MIT](LICENSE) license.
 
 **This is a compilation of different works.**
